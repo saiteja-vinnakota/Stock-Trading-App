@@ -2,7 +2,7 @@ import User from "../models/User.js";
 import Portfolio from "../models/Portfolio.js";
 import Order from "../models/Order.js";
 import Transaction from "../models/Transaction.js";
-import Watchlist from "../models/Watchlist.js";
+import Watchlist from "../models/WatchList.js";
 
 export const getDashboard = async (req, res) => {
     try {
