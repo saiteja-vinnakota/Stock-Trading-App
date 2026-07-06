@@ -42,6 +42,9 @@ function Navbar() {
               <Link to="/admin" className="hover:text-emerald-400">
                 Dashboard
               </Link>
+              <Link to="/admin/stocks" className="hover:text-emerald-400">
+                Stocks
+              </Link>
 
               <Link to="/admin/users" className="hover:text-emerald-400">
                 Users
@@ -78,6 +81,10 @@ function Navbar() {
 
               <Link to="/history" className="hover:text-emerald-400">
                 History
+              </Link>
+
+              <Link to="/watchlist" className="hover:text-emerald-400">
+                Watchlist
               </Link>
 
               <Link to="/profile" className="hover:text-emerald-400">

@@ -7,11 +7,13 @@ import History from "./pages/History";
 import Profile from "./pages/Profile";
 import StockDetails from "./pages/StockDetails";
 import Stocks from "./pages/Stocks";
+import Watchlist from "./pages/WatchList";
 
 import Admin from "./pages/Admin";
 import Users from "./pages/Users";
 import AllOrders from "./pages/AllOrders";
 import AllTransactions from "./pages/AllTransactions";
+import AdminStocks from "./pages/AdminStocks";
 
 import Login from "./components/Login";
 import Register from "./components/Register";
@@ -91,6 +93,15 @@ function App() {
       />
 
       <Route
+        path="/watchlist"
+        element={
+          <PrivateRoute>
+            <Watchlist />
+          </PrivateRoute>
+        }
+      />
+
+      <Route
         path="/stock/:id"
         element={
           <PrivateRoute>
@@ -131,6 +142,15 @@ function App() {
         element={
           <AdminRoute>
             <AllTransactions />
+          </AdminRoute>
+        }
+      />
+
+      <Route
+        path="/admin/stocks"
+        element={
+          <AdminRoute>
+            <AdminStocks />
           </AdminRoute>
         }
       />

@@ -10,6 +10,7 @@ import {
     getStockHistory,
     getStockDetails,
     updateStockPrice,
+    toggleTrading
 } from "../controllers/stockController.js";
 
 import {
@@ -33,9 +34,11 @@ router.put("/:id", protect, adminOnly, updateStock);
 
 router.delete("/:id", protect, adminOnly, deleteStock);
 
+router.put("/toggle/:id", protect, adminOnly, toggleTrading);
+
 router.get("/history/:symbol", getStockHistory);
 
-router.get("/details/:id", getStockDetails);
+router.get("/details/:id", protect, getStockDetails);
 
 router.put(
     "/price/:id",
