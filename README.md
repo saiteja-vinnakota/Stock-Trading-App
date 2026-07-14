@@ -1,4 +1,4 @@
-# 📈 SB Stocks - Virtual Stock Trading Platform
+# 📈  Stock Trading App
 
 SB Stocks is a full-stack MERN virtual stock trading platform that enables users to learn and practice stock market trading using virtual money. The platform provides live stock prices, realistic portfolio management, order execution, transaction history, candlestick charts, watchlists, and an admin dashboard for managing stocks and users.
 
